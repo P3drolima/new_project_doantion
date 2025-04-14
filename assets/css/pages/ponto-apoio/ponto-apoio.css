@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo base do cabeçalho */
+.header {
+    width: 100%;
+    padding: 0px 10px 20px ;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(48, 28, 28, 0.1);
+}
+
+/* Estilo do menu */
+.menu {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Adiciona uma borda sólida cinza ao redor do menu */
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    background-color: green;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: white;
+}
+.menu a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o mouse */
+    
+  }
+  
+/* Estilo do título "Viva e doe" */
+#viva_doe {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+/* Media query para telas menores, como smartphones */
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    }
+
+    .menu a {
+        flex: 1 1 50%; /* Faz os itens ocuparem 50% da largura disponível */
+        margin: 5px; /* Adiciona um pequeno espaço entre os itens */
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #viva_doe {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
