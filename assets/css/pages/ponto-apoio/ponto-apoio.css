@@ -68,3 +68,25 @@
         padding: 15px;
     }
 }
+
+.cards{
+    display: flex;
+    justify-content: space-around; /* Distribui os boxes uniformemente */
+    flex-wrap: wrap; /* Permite que os boxes quebrem linha se necessário */
+    padding: 80px 0 20px 0;
+    
+}
+.box {
+    width: 20%; /* Largura de cada box */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.box img {
+    display: block;
+    width: 100%; /* Garante que a imagem ocupe toda a largura do box */
+    border-radius: 8px; /* Adiciona bordas arredondadas na imagem */
+}
