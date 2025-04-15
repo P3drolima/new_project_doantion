@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo base do cabeçalho */
+.header {
+    width: 100%;
+    padding: 0px 10px 20px ;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(48, 28, 28, 0.1);
+}
+
+/* Estilo do menu */
+.menu {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Adiciona uma borda sólida cinza ao redor do menu */
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    background-color: green;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: white;
+}
+.menu a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o mouse */
+    
+  }
+  
+/* Estilo do título "Viva e doe" */
+#viva_doe {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+/* Media query para telas menores, como smartphones */
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    }
+
+    .menu a {
+        flex: 1 1 50%; /* Faz os itens ocuparem 50% da largura disponível */
+        margin: 5px; /* Adiciona um pequeno espaço entre os itens */
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #viva_doe {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+/*mensagem principal*/
+.main{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 800px;
+        margin: 100px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+}
+h1{
+    padding-bottom: 20px;
+    font-size: 60px;
+    
+}
+h2{
+    margin-bottom: 40px;
+}
+p{
+    font-size: 17px;
+    line-height: 1.6;
+}
+.cards{
+    display: flex;
+    justify-content: space-around; /* Distribui os boxes uniformemente */
+    flex-wrap: wrap; /* Permite que os boxes quebrem linha se necessário */
+    padding: 0 0 20px 0;
+    
+}
+.box {
+    width: 20%; /* Largura de cada box */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.box img {
+    display: block;
+    width: 100%; /* Garante que a imagem ocupe toda a largura do box */
+    border-radius: 8px; /* Adiciona bordas arredondadas na imagem */
+}
+
+.row-footer{
+    padding-top: 50px;
+}
+
+
+/*News Letter*/
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    margin: 40px -15 0;
+    padding: 50px 0;
+    justify-content: space-between;
+    background-color: green;
+}
+.newsletter-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.newsletter-massage{
+    align-items: flex-start;
+    display: felx;
+    flex-direction: column;
+    width: 40%;
+}
+.newsletter-massage{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    margin: 15px 0 0;
+}
+
+.newsletter-paragraph{
+    color: white;
+    letter-spacing: -.03em;
+    font: 22px;
+}
+
+.newsletter-register{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0;
+    transition: .5s;
+}
+.input-label{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    padding: 0 15px;
+    white-space: nowrap;
+
+}
+.input-control{
+    border: none;
+    box-shadow: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    height: 30px;
+    letter-spacing: -.03em;
+    margin-left: 5px;
+    outline: none;
+    width: 300px;
+}
+.row-one{
+    padding-bottom: 40px;
+}
+.button-text{
+    text-align: center;
+}
+.row-three{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 25%;
+}
+.button{
+    margin-top: 40px;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cc-color-14) !important;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+}
